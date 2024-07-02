@@ -4,10 +4,9 @@ import html from '../assets/html.svg';
 type props = {
   key: number;
   nombre: string;
-  img: any;
 };
 
-function Skills({ nombre, img }: props) {
+function Skills({ nombre }: props) {
   return (
     <section className="skills__main">
       <img src={html} alt="Img icono" />

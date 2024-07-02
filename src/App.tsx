@@ -27,32 +27,26 @@ const skills = [
   {
     key: 1,
     nombre: 'HTML 5',
-    img: '',
   },
   {
     key: 2,
     nombre: 'CSS',
-    img: '../assets/html.svg',
   },
   {
     key: 3,
     nombre: 'Javascript',
-    img: '../assets/html.svg',
   },
   {
     key: 4,
     nombre: 'React',
-    img: '../assets/html.svg',
   },
   {
     key: 5,
     nombre: 'Django',
-    img: '../assets/html.svg',
   },
   {
     key: 6,
     nombre: 'Bootstrap',
-    img: '../assets/html.svg',
   },
 ];
 
@@ -71,8 +65,8 @@ function App() {
         ></Experiencia>
       ))}
       <Proyectos></Proyectos>
-      {skills.map(({ key, nombre, img }) => (
-        <Skills key={key} nombre={nombre} img={img}></Skills>
+      {skills.map(({ key, nombre }) => (
+        <Skills key={key} nombre={nombre}></Skills>
       ))}
     </section>
   );
