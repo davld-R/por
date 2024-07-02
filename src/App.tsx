@@ -1,6 +1,8 @@
 import Menu from './components/Menu';
 import Banner from './components/Banner';
 import Experiencia from './components/Experiencia';
+import Proyectos from './components/Proyectos';
+import Skills from './components/Skills';
 
 const experiencia = [
   {
@@ -21,12 +23,65 @@ const experiencia = [
   },
 ];
 
+const skills = [
+  {
+    key: 1,
+    nombre: 'HTML 5',
+    img: '',
+  },
+  {
+    key: 2,
+    nombre: 'CSS',
+    img: '../assets/html.svg',
+  },
+  {
+    key: 3,
+    nombre: 'Javascript',
+    img: '../assets/html.svg',
+  },
+  {
+    key: 4,
+    nombre: 'React',
+    img: '../assets/html.svg',
+  },
+  {
+    key: 5,
+    nombre: 'Django',
+    img: '../assets/html.svg',
+  },
+  {
+    key: 6,
+    nombre: 'Bootstrap',
+    img: '../assets/html.svg',
+  },
+];
+
 function App() {
   return (
     <section className="contenedor">
       <Menu></Menu>
       <Banner></Banner>
-      {/* <Experiencia
+      {experiencia.map(({ key, nombre, empresa, fecha, funcion }) => (
+        <Experiencia
+          key={key}
+          nombre={nombre}
+          empresa={empresa}
+          fecha={fecha}
+          funcion={funcion}
+        ></Experiencia>
+      ))}
+      <Proyectos></Proyectos>
+      {skills.map(({ key, nombre, img }) => (
+        <Skills key={key} nombre={nombre} img={img}></Skills>
+      ))}
+    </section>
+  );
+}
+
+export default App;
+
+{
+  /* <Experiencia
         key={1}
         nombre="Desarrollador de software"
         empresa="Fundación Suyusama"
@@ -37,19 +92,5 @@ function App() {
             página web y su disponibilidad. Gestión de Base de Datos: Diseño e
             implementación de una base de datos para almacenar información
             relevante."
-      ></Experiencia> */}
-      {experiencia.map(({ key, nombre, empresa, fecha, funcion }) => (
-        <Experiencia
-          key={key}
-          nombre={nombre}
-          empresa={empresa}
-          fecha={fecha}
-          funcion={funcion}
-        ></Experiencia>
-      ))}
-    </section>
-  );
+      ></Experiencia> */
 }
-
-export default App;
-//
