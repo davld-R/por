@@ -1,6 +1,8 @@
+import '../css/banner/banner.css';
+
 function Banner() {
   return (
-    <section>
+    <section className="banner__cabezera">
       <div>
         <img src="" alt="Imagen David" />
         <button>Disponible para trabajar</button>

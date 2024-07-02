@@ -1,32 +1,11 @@
 import '../css/menu/cabezera.css';
+import code from '../assets/code.svg';
 
 function Menu() {
   return (
     <header className="cabezera">
       <div>
-        <svg
-          width="32px"
-          height="32px"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#000000"
-        >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            {' '}
-            <path
-              fill="none"
-              stroke="#000000"
-              stroke-width="2"
-              d="M9,22 L15,2 M17,17 L22,12 L17,7 M7,17 L2,12 L7,7"
-            ></path>{' '}
-          </g>
-        </svg>
+        <img src={code} alt="Img code" />
         <p>Juan Rojas</p>
       </div>
       <nav className="menu">
