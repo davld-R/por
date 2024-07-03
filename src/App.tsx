@@ -3,6 +3,7 @@ import Banner from './components/Banner';
 import Experiencia from './components/Experiencia';
 import Proyectos from './components/Proyectos';
 import Skills from './components/Skills';
+import { FaHtml5 } from 'react-icons/fa';
 
 const experiencia = [
   {
@@ -65,14 +66,18 @@ function App() {
         ></Experiencia>
       ))}
       <Proyectos></Proyectos>
-      {skills.map(({ key, nombre }) => (
-        <Skills key={key} nombre={nombre}></Skills>
-      ))}
+      <FaHtml5 />
+      <Skills key={1} nombre="HTML"></Skills>
+      <Skills key={2} nombre="CSS"></Skills>
     </section>
   );
 }
 
 export default App;
+
+// {skills.map(({ key, nombre }) => (
+//   <Skills key={key} nombre={nombre}></Skills>
+// ))}
 
 {
   /* <Experiencia
