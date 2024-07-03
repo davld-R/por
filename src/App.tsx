@@ -5,6 +5,7 @@ import Proyectos from './components/Proyectos';
 import Skills from './components/Skills';
 import Html5Icon from './components/svg/Html5Icon';
 import Css5Icon from './components/svg/Css5Icon';
+import JavaScriptIcon from './components/svg/JavaScriptIcon';
 
 const experiencia = [
   {
@@ -43,6 +44,7 @@ function App() {
 
       <Skills key={1} nombre="HTML" Icon={Html5Icon}></Skills>
       <Skills key={2} nombre="CSS" Icon={Css5Icon}></Skills>
+      <Skills key={3} nombre="Javascript" Icon={JavaScriptIcon}></Skills>
     </section>
   );
 }
