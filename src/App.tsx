@@ -6,6 +6,9 @@ import Skills from './components/Skills';
 import Html5Icon from './components/svg/Html5Icon';
 import Css5Icon from './components/svg/Css5Icon';
 import JavaScriptIcon from './components/svg/JavaScriptIcon';
+import ReactIcon from './components/svg/ReactIcon';
+import DjangoIcon from './components/svg/DjangoIcon';
+import BootstrapIcon from './components/svg/BootstrapIcon';
 
 const experiencia = [
   {
@@ -45,6 +48,9 @@ function App() {
       <Skills key={1} nombre="HTML" Icon={Html5Icon}></Skills>
       <Skills key={2} nombre="CSS" Icon={Css5Icon}></Skills>
       <Skills key={3} nombre="Javascript" Icon={JavaScriptIcon}></Skills>
+      <Skills key={4} nombre="React" Icon={ReactIcon}></Skills>
+      <Skills key={5} nombre="Django" Icon={DjangoIcon}></Skills>
+      <Skills key={6} nombre="Bootstrap" Icon={BootstrapIcon}></Skills>
     </section>
   );
 }
