@@ -24,32 +24,32 @@ const experiencia = [
   },
 ];
 
-const skills = [
-  {
-    key: 1,
-    nombre: 'HTML 5',
-  },
-  {
-    key: 2,
-    nombre: 'CSS',
-  },
-  {
-    key: 3,
-    nombre: 'Javascript',
-  },
-  {
-    key: 4,
-    nombre: 'React',
-  },
-  {
-    key: 5,
-    nombre: 'Django',
-  },
-  {
-    key: 6,
-    nombre: 'Bootstrap',
-  },
-];
+// const skills = [
+//   {
+//     key: 1,
+//     nombre: 'HTML 5',
+//   },
+//   {
+//     key: 2,
+//     nombre: 'CSS',
+//   },
+//   {
+//     key: 3,
+//     nombre: 'Javascript',
+//   },
+//   {
+//     key: 4,
+//     nombre: 'React',
+//   },
+//   {
+//     key: 5,
+//     nombre: 'Django',
+//   },
+//   {
+//     key: 6,
+//     nombre: 'Bootstrap',
+//   },
+// ];
 
 function App() {
   return (

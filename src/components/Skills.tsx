@@ -1,6 +1,4 @@
 import '../css/skills/skills__main.css';
-import html from '../assets/html.svg';
-import { FaHtml5 } from 'react-icons/fa';
 
 type props = {
   key: number;
