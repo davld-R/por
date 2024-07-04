@@ -9,6 +9,16 @@ import JavaScriptIcon from './components/svg/JavaScriptIcon';
 import ReactIcon from './components/svg/ReactIcon';
 import DjangoIcon from './components/svg/DjangoIcon';
 import BootstrapIcon from './components/svg/BootstrapIcon';
+import Hobbies from './components/Hobbies';
+import MusicIcon from './components/svg/MusicIcon';
+import FutIcon from './components/svg/FutIcon';
+import TrotarIcon from './components/svg/TrotarIcon';
+import SeriesIcon from './components/svg/SeriesIcon';
+import LibroIcon from './components/svg/LibroIcon';
+import CocinarIcon from './components/svg/CocinarIcon';
+import Formacion from './components/Formacion';
+import SobreMi from './components/SobreMi';
+import Footer from './components/Footer';
 
 const experiencia = [
   {
@@ -44,13 +54,22 @@ function App() {
         ></Experiencia>
       ))}
       <Proyectos></Proyectos>
-
       <Skills key={1} nombre="HTML" Icon={Html5Icon}></Skills>
       <Skills key={2} nombre="CSS" Icon={Css5Icon}></Skills>
       <Skills key={3} nombre="Javascript" Icon={JavaScriptIcon}></Skills>
       <Skills key={4} nombre="React" Icon={ReactIcon}></Skills>
       <Skills key={5} nombre="Django" Icon={DjangoIcon}></Skills>
       <Skills key={6} nombre="Bootstrap" Icon={BootstrapIcon}></Skills>
+      <h1 style={{ marginTop: '2rem' }}>Hobbies</h1>
+      <Hobbies id={1} nombre="Música" Imagen={MusicIcon}></Hobbies>
+      <Hobbies id={2} nombre="Fútbol" Imagen={FutIcon}></Hobbies>
+      <Hobbies id={3} nombre="Trotar" Imagen={TrotarIcon}></Hobbies>
+      <Hobbies id={4} nombre="Ver series" Imagen={SeriesIcon}></Hobbies>
+      <Hobbies id={5} nombre="Leer" Imagen={LibroIcon}></Hobbies>
+      <Hobbies id={6} nombre="Cocinar" Imagen={CocinarIcon}></Hobbies>
+      <Formacion></Formacion>
+      <SobreMi></SobreMi>
+      <Footer></Footer>
     </section>
   );
 }
