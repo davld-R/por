@@ -4,12 +4,15 @@ function Banner() {
   return (
     <section className="banner__cabezera">
       <div>
-        <img src="" alt="Imagen David" />
+        <img
+          src="https://github.com/davld-R.png"
+          alt="Imagen David"
+          style={{ width: '150px', height: '150px' }}
+        />
         <button>Disponible para trabajar</button>
       </div>
       <div>
         <h1>Hola, mi nombre es Juan</h1>
-
         <p>Ingeniero de sistemas de Colombia y desarrollo páginas web</p>
         <nav>
           <ul>
