@@ -2,10 +2,10 @@ function Footer() {
   const date = new Date();
 
   return (
-    <section style={{ marginTop: '1rem' }}>
+    <footer style={{ marginTop: '3rem' }}>
       <p>Desarrollado por Juan David Rojas Rosero</p>
       <p>{date.getFullYear()}</p>
-    </section>
+    </footer>
   );
 }
 

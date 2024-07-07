@@ -41,7 +41,7 @@ const experiencia = [
 
 function App() {
   return (
-    <section className="contenedor">
+    <>
       <Menu></Menu>
       <Banner></Banner>
       {experiencia.map(({ key, nombre, empresa, fecha, funcion }) => (
@@ -92,15 +92,10 @@ function App() {
       <Hobbies nombre="Cocinar">
         <CocinarIcon></CocinarIcon>
       </Hobbies>
-      {/* 
-      
-      
-      
-      <Hobbies nombre="Cocinar" Imagen={CocinarIcon}></Hobbies> */}
       <Formacion></Formacion>
       <SobreMi></SobreMi>
       <Footer></Footer>
-    </section>
+    </>
   );
 }
 
