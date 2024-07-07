@@ -1,14 +1,15 @@
+import { ReactNode } from 'react';
+
 interface props {
-  id: number;
   nombre: string;
-  Imagen: React.FC;
+  children: ReactNode;
 }
 
-function Hobbies({ nombre, Imagen }: props) {
+function Hobbies({ nombre, children }: props) {
   return (
     <section style={{ marginTop: '1rem' }}>
-      <Imagen />
       <h1>{nombre}</h1>
+      {children}
     </section>
   );
 }

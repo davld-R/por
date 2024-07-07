@@ -3,19 +3,19 @@ import Banner from './components/Banner';
 import Experiencia from './components/Experiencia';
 import Proyectos from './components/Proyectos';
 import Skills from './components/Skills';
-import Html5Icon from './components/svg/Html5Icon';
-import Css5Icon from './components/svg/Css5Icon';
-import JavaScriptIcon from './components/svg/JavaScriptIcon';
-import ReactIcon from './components/svg/ReactIcon';
-import DjangoIcon from './components/svg/DjangoIcon';
-import BootstrapIcon from './components/svg/BootstrapIcon';
+import Html5Icon from './components/Icons/Html5Icon';
+import Css5Icon from './components/Icons/Css5Icon';
+import JavaScriptIcon from './components/Icons/JavaScriptIcon';
+import ReactIcon from './components/Icons/ReactIcon';
+import DjangoIcon from './components/Icons/DjangoIcon';
+import BootstrapIcon from './components/Icons/TailwindIcon';
 import Hobbies from './components/Hobbies';
-import MusicIcon from './components/svg/MusicIcon';
-import FutIcon from './components/svg/FutIcon';
-import TrotarIcon from './components/svg/TrotarIcon';
-import SeriesIcon from './components/svg/SeriesIcon';
-import LibroIcon from './components/svg/LibroIcon';
-import CocinarIcon from './components/svg/CocinarIcon';
+import MusicIcon from './components/Icons/MusicIcon';
+import FutIcon from './components/Icons/FutIcon';
+import TrotarIcon from './components/Icons/TrotarIcon';
+import SeriesIcon from './components/Icons/SeriesIcon';
+import LibroIcon from './components/Icons/LibroIcon';
+import CocinarIcon from './components/Icons/CocinarIcon';
 import Formacion from './components/Formacion';
 import SobreMi from './components/SobreMi';
 import Footer from './components/Footer';
@@ -54,19 +54,49 @@ function App() {
         ></Experiencia>
       ))}
       <Proyectos></Proyectos>
-      <Skills key={1} nombre="HTML" Icon={Html5Icon}></Skills>
-      <Skills key={2} nombre="CSS" Icon={Css5Icon}></Skills>
-      <Skills key={3} nombre="Javascript" Icon={JavaScriptIcon}></Skills>
-      <Skills key={4} nombre="React" Icon={ReactIcon}></Skills>
-      <Skills key={5} nombre="Django" Icon={DjangoIcon}></Skills>
-      <Skills key={6} nombre="Bootstrap" Icon={BootstrapIcon}></Skills>
+      <h1 style={{ marginTop: '2rem' }}>Skills</h1>
+      <Skills nombre="HTML">
+        <Html5Icon width="64px" height="64px"></Html5Icon>
+      </Skills>
+      <Skills nombre="CSS">
+        <Css5Icon width="64px" height="64px"></Css5Icon>
+      </Skills>
+      <Skills nombre="JavaScript">
+        <JavaScriptIcon></JavaScriptIcon>
+      </Skills>
+      <Skills nombre="React">
+        <ReactIcon></ReactIcon>
+      </Skills>
+      <Skills nombre="Django">
+        <DjangoIcon></DjangoIcon>
+      </Skills>
+      <Skills nombre="Tailwind CSS">
+        <BootstrapIcon></BootstrapIcon>
+      </Skills>
       <h1 style={{ marginTop: '2rem' }}>Hobbies</h1>
-      <Hobbies id={1} nombre="Música" Imagen={MusicIcon}></Hobbies>
-      <Hobbies id={2} nombre="Fútbol" Imagen={FutIcon}></Hobbies>
-      <Hobbies id={3} nombre="Trotar" Imagen={TrotarIcon}></Hobbies>
-      <Hobbies id={4} nombre="Ver series" Imagen={SeriesIcon}></Hobbies>
-      <Hobbies id={5} nombre="Leer" Imagen={LibroIcon}></Hobbies>
-      <Hobbies id={6} nombre="Cocinar" Imagen={CocinarIcon}></Hobbies>
+      <Hobbies nombre="Música">
+        <MusicIcon></MusicIcon>
+      </Hobbies>
+      <Hobbies nombre="Fútbol">
+        <FutIcon></FutIcon>
+      </Hobbies>
+      <Hobbies nombre="Trotar">
+        <TrotarIcon></TrotarIcon>
+      </Hobbies>
+      <Hobbies nombre="Ver series">
+        <SeriesIcon></SeriesIcon>
+      </Hobbies>
+      <Hobbies nombre="Leer">
+        <LibroIcon></LibroIcon>
+      </Hobbies>
+      <Hobbies nombre="Cocinar">
+        <CocinarIcon></CocinarIcon>
+      </Hobbies>
+      {/* 
+      
+      
+      
+      <Hobbies nombre="Cocinar" Imagen={CocinarIcon}></Hobbies> */}
       <Formacion></Formacion>
       <SobreMi></SobreMi>
       <Footer></Footer>

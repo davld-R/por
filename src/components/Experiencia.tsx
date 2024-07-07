@@ -1,5 +1,6 @@
 import '../css/experiencia/experiencia.css';
-import bag from '../assets/bag.svg';
+
+import MaletinIco from './Icons/MaletinIco';
 
 type props = {
   key: number;
@@ -13,7 +14,7 @@ function Experiencia({ nombre, empresa, fecha, funcion }: props) {
   return (
     <section className="experiencia__cabezera">
       <div>
-        <img src={bag} alt="Img bag" />
+        <MaletinIco width="32px" height="32px"></MaletinIco>
         <h1>Experiencia profesional</h1>
       </div>
       <div>

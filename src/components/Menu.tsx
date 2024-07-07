@@ -1,11 +1,12 @@
 import '../css/menu/cabezera.css';
-import code from '../assets/code.svg';
+
+import CodeIcon from './Icons/CodeIcon';
 
 function Menu() {
   return (
     <header className="cabezera">
       <div>
-        <img src={code} alt="Img code" />
+        <CodeIcon width="32px" height="32px"></CodeIcon>
         <p>Juan Rojas</p>
       </div>
       <nav className="menu">

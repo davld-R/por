@@ -1,16 +1,15 @@
-import '../css/skills/skills__main.css';
+import { ReactNode } from 'react';
 
 type props = {
-  key: number;
   nombre: string;
-  Icon: React.FC;
+  children: ReactNode;
 };
 
-function Skills({ nombre, Icon }: props) {
+function Skills({ nombre, children }: props) {
   return (
     <section className="skills__main">
-      <Icon />
       <h1>{nombre}</h1>
+      {children}
     </section>
   );
 }
