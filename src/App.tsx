@@ -16,7 +16,6 @@ import TrotarIcon from './components/Icons/TrotarIcon';
 import SeriesIcon from './components/Icons/SeriesIcon';
 import LibroIcon from './components/Icons/LibroIcon';
 import CocinarIcon from './components/Icons/CocinarIcon';
-import Formacion from './components/Formacion';
 import SobreMi from './components/SobreMi';
 import Footer from './components/Footer';
 
