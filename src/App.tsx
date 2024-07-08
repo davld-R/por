@@ -57,7 +57,7 @@ function App() {
       <h1 className="mt-36 mb-10 text-xl font-semibold text-center font-mono">
         Skills
       </h1>
-      <section className="flex justify-between">
+      <section className="flex flex-wrap justify-between">
         <Skills nombre="HTML">
           <Html5Icon width="64px" height="64px"></Html5Icon>
         </Skills>
@@ -80,7 +80,7 @@ function App() {
       <h1 className="mt-36 mb-10 text-xl font-semibold text-center font-mono">
         Hobbies
       </h1>
-      <section className="flex justify-between mb-32">
+      <section className="flex flex-wrap justify-between mb-32">
         <Hobbies nombre="Música">
           <MusicIcon></MusicIcon>
         </Hobbies>
@@ -100,7 +100,6 @@ function App() {
           <CocinarIcon></CocinarIcon>
         </Hobbies>
       </section>
-      <Formacion></Formacion>
       <SobreMi></SobreMi>
       <Footer></Footer>
     </>

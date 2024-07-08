@@ -7,7 +7,6 @@ function Menu() {
         <CodeIcon width="32px" height="32px" color="#FACC15"></CodeIcon>
         <p className="">Juan Rojas</p>
       </div>
-
       <nav className="">
         <ul className="flex gap-5">
           <li className="">
