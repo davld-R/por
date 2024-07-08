@@ -6,8 +6,7 @@ interface IcoProps {
 }
 
 export default function HtmlIco({ width, height }: IcoProps) {
-  const bandera = true;
-  const [html, setHtml] = useState(bandera);
+  const [html, setHtml] = useState(true);
   const htmlColor = html ? '#E44D26' : '#222';
   const htmlColor2 = html ? '#F16529' : '#fff';
 

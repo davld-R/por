@@ -1,8 +1,6 @@
-import '../css/proyectos/proyecto.css';
-
 function Proyectos() {
   return (
-    <section className="proyecto__cabezera">
+    <section className="">
       <h1>hola desde proyectos</h1>
     </section>
   );

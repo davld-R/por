@@ -54,44 +54,52 @@ function App() {
         ></Experiencia>
       ))}
       <Proyectos></Proyectos>
-      <h1 style={{ marginTop: '2rem' }}>Skills</h1>
-      <Skills nombre="HTML">
-        <Html5Icon width="64px" height="64px"></Html5Icon>
-      </Skills>
-      <Skills nombre="CSS">
-        <Css5Icon width="64px" height="64px"></Css5Icon>
-      </Skills>
-      <Skills nombre="JavaScript">
-        <JavaScriptIcon></JavaScriptIcon>
-      </Skills>
-      <Skills nombre="React">
-        <ReactIcon></ReactIcon>
-      </Skills>
-      <Skills nombre="Django">
-        <DjangoIcon></DjangoIcon>
-      </Skills>
-      <Skills nombre="Tailwind CSS">
-        <BootstrapIcon></BootstrapIcon>
-      </Skills>
-      <h1 style={{ marginTop: '2rem' }}>Hobbies</h1>
-      <Hobbies nombre="Música">
-        <MusicIcon></MusicIcon>
-      </Hobbies>
-      <Hobbies nombre="Fútbol">
-        <FutIcon></FutIcon>
-      </Hobbies>
-      <Hobbies nombre="Trotar">
-        <TrotarIcon></TrotarIcon>
-      </Hobbies>
-      <Hobbies nombre="Ver series">
-        <SeriesIcon></SeriesIcon>
-      </Hobbies>
-      <Hobbies nombre="Leer">
-        <LibroIcon></LibroIcon>
-      </Hobbies>
-      <Hobbies nombre="Cocinar">
-        <CocinarIcon></CocinarIcon>
-      </Hobbies>
+      <h1 className="mt-36 mb-10 text-xl font-semibold text-center font-mono">
+        Skills
+      </h1>
+      <section className="flex justify-between">
+        <Skills nombre="HTML">
+          <Html5Icon width="64px" height="64px"></Html5Icon>
+        </Skills>
+        <Skills nombre="CSS">
+          <Css5Icon width="64px" height="64px"></Css5Icon>
+        </Skills>
+        <Skills nombre="JavaScript">
+          <JavaScriptIcon></JavaScriptIcon>
+        </Skills>
+        <Skills nombre="React">
+          <ReactIcon></ReactIcon>
+        </Skills>
+        <Skills nombre="Django">
+          <DjangoIcon></DjangoIcon>
+        </Skills>
+        <Skills nombre="Tailwind CSS">
+          <BootstrapIcon></BootstrapIcon>
+        </Skills>
+      </section>
+      <h1 className="mt-36 mb-10 text-xl font-semibold text-center font-mono">
+        Hobbies
+      </h1>
+      <section className="flex justify-between mb-32">
+        <Hobbies nombre="Música">
+          <MusicIcon></MusicIcon>
+        </Hobbies>
+        <Hobbies nombre="Fútbol">
+          <FutIcon></FutIcon>
+        </Hobbies>
+        <Hobbies nombre="Trotar">
+          <TrotarIcon></TrotarIcon>
+        </Hobbies>
+        <Hobbies nombre="Ver series">
+          <SeriesIcon></SeriesIcon>
+        </Hobbies>
+        <Hobbies nombre="Leer">
+          <LibroIcon></LibroIcon>
+        </Hobbies>
+        <Hobbies nombre="Cocinar">
+          <CocinarIcon></CocinarIcon>
+        </Hobbies>
+      </section>
       <Formacion></Formacion>
       <SobreMi></SobreMi>
       <Footer></Footer>

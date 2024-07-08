@@ -1,8 +1,9 @@
 export default function JavaScriptIcon() {
   return (
     <svg
-      width="64px"
-      height="64px"
+      width="54px"
+      height="54px"
+      className="rounded-md"
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"

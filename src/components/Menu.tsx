@@ -1,43 +1,42 @@
-import '../css/menu/cabezera.css';
-
 import CodeIcon from './Icons/CodeIcon';
 
 function Menu() {
   return (
-    <header className="cabezera">
-      <div>
-        <CodeIcon width="32px" height="32px"></CodeIcon>
-        <p>Juan Rojas</p>
+    <header className="flex justify-between mt-2 mb-28 items-center">
+      <div className="flex gap-2 items-center">
+        <CodeIcon width="32px" height="32px" color="#FACC15"></CodeIcon>
+        <p className="">Juan Rojas</p>
       </div>
-      <nav className="menu">
-        <ul className="menu__lista">
-          <li className="menu__item">
-            <a className="menu__link" href="#">
+
+      <nav className="">
+        <ul className="flex gap-5">
+          <li className="">
+            <a className="" href="#">
               Experiencia
             </a>
           </li>
-          <li className="menu__item">
-            <a className="menu__link" href="#">
+          <li className="">
+            <a className="" href="#">
               Proyectos
             </a>
           </li>
-          <li className="menu__item">
-            <a className="menu__link" href="#">
+          <li className="">
+            <a className="" href="#">
               Skills
             </a>
           </li>
-          <li className="menu__item">
-            <a className="menu__link" href="#">
+          <li className="">
+            <a className="" href="#">
               Hobbies
             </a>
           </li>
-          <li className="menu__item">
-            <a className="menu__link" href="#">
+          <li className="">
+            <a className="" href="#">
               Formación académica
             </a>
           </li>
-          <li className="menu__item">
-            <a className="menu__link" href="#">
+          <li className="">
+            <a className="" href="#">
               Sobre mi
             </a>
           </li>
