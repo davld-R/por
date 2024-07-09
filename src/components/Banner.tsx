@@ -8,7 +8,11 @@ function Banner() {
           className="size-16 rounded-full"
         />
 
-        <button className="dark:bg-gray-800 dark:text-white dark:border-teal-300 border h-8 px-3 text-sm rounded-xl border-slate-300 hover:scale-105 hover:duration-300 hover:-translate-y-0.5">
+        <button
+          className="
+        dark:bg-gray-800 dark:text-white dark:border-teal-300 
+        border h-8 px-3 text-sm rounded-xl bg-green-100 border-gray-700 hover:scale-105 hover:duration-300 hover:-translate-y-0.5"
+        >
           Disponible para trabajar
         </button>
       </div>
@@ -21,19 +25,35 @@ function Banner() {
         </p>
 
         <nav className="mt-8">
-          <ul className="flex gap-4 ">
-            <li className="dark:border-gray-600 dark:bg-gray-800 border border-slate-300 rounded-xl h-8 w-36 py-1 text-center ">
-              <a href="#">Github</a>
-            </li>
-            <li className="dark:border-gray-600 dark:bg-gray-800 border border-slate-300 rounded-xl h-8 w-36 py-1 text-center">
-              <a href="#">Linkedin</a>
-            </li>
-            <li className="dark:border-gray-600 dark:bg-gray-800 border border-slate-300 rounded-xl h-8 w-36 py-1 text-center">
-              <a href="#">Twitter</a>
-            </li>
-            <li className="dark:border-gray-600 dark:bg-gray-800 border border-slate-300 rounded-xl h-8 w-36 py-1 text-center">
-              <a href="#">Curriculo</a>
-            </li>
+          <ul className="flex gap-4">
+            <a
+              className="dark:border-gray-600 dark:bg-gray-800 border dark:hover:bg-gray-800
+             hover:bg-gray-800 hover:text-slate-50 border-slate-300 rounded-xl h-8 w-36 py-1 text-center"
+              href="https://www.google.com/?hl=es"
+            >
+              Github
+            </a>
+            <a
+              className="dark:border-gray-600 dark:bg-gray-800 border dark:hover:bg-gray-800
+             hover:bg-gray-800 hover:text-slate-50 border-slate-300 rounded-xl h-8 w-36 py-1 text-center"
+              href="#"
+            >
+              Linkedin
+            </a>
+            <a
+              className="dark:border-gray-600 dark:bg-gray-800 border dark:hover:bg-gray-800
+             hover:bg-gray-800 hover:text-slate-50 border-slate-300 rounded-xl h-8 w-36 py-1 text-center"
+              href="#"
+            >
+              Twitter
+            </a>
+            <a
+              className="dark:border-gray-600 dark:bg-gray-800 border dark:hover:bg-gray-800
+             hover:bg-gray-800 hover:text-slate-50 border-slate-300 rounded-xl h-8 w-36 py-1 text-center"
+              href="#"
+            >
+              Curriculo
+            </a>
           </ul>
         </nav>
       </div>

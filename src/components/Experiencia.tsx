@@ -1,5 +1,3 @@
-import MaletinIco from './Icons/MaletinIco';
-
 type props = {
   key: number;
   nombre: string;
@@ -9,21 +7,8 @@ type props = {
 };
 
 function Experiencia({ nombre, empresa, fecha, funcion }: props) {
-  const isDarkMode =
-    localStorage.theme === 'dark' ||
-    (!('theme' in localStorage) &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches);
-
   return (
     <section className="mb-10">
-      <div className="flex pb-6 items-center gap-4">
-        <MaletinIco
-          width="32px"
-          height="32px"
-          className={`${isDarkMode ? '#fff' : '#000'}`}
-        ></MaletinIco>
-        <h1 className="text-3xl font-semibold">Experiencia profesional</h1>
-      </div>
       <div className="pt-8">
         <div className="flex justify-between">
           <div className="">

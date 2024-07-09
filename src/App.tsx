@@ -18,6 +18,7 @@ import LibroIcon from './components/Icons/LibroIcon';
 import CocinarIcon from './components/Icons/CocinarIcon';
 import SobreMi from './components/SobreMi';
 import Footer from './components/Footer';
+import MaletinIco from './components/Icons/MaletinIco';
 
 const experiencia = [
   {
@@ -39,10 +40,19 @@ const experiencia = [
 ];
 
 function App() {
+  // const isDarkMode =
+  //   localStorage.theme === 'dark' ||
+  //   (!('theme' in localStorage) &&
+  //     window.matchMedia('(prefers-color-scheme: dark)').matches);
+
   return (
     <>
       <Menu></Menu>
       <Banner></Banner>
+      <div className="flex pb-6 items-center gap-4" id="experiencia">
+        <MaletinIco width="32px" height="32px"></MaletinIco>
+        <h1 className="text-3xl font-semibold">Experiencia profesional</h1>
+      </div>
       {experiencia.map(({ key, nombre, empresa, fecha, funcion }) => (
         <Experiencia
           key={key}
@@ -53,7 +63,10 @@ function App() {
         ></Experiencia>
       ))}
       <Proyectos></Proyectos>
-      <h1 className="mt-36 mb-10 text-xl font-semibold text-center font-mono">
+      <h1
+        id="skills"
+        className="mt-36 mb-10 text-xl font-semibold text-center font-mono"
+      >
         Skills
       </h1>
       <section className="flex flex-wrap justify-between">

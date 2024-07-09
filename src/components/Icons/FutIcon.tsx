@@ -1,7 +1,7 @@
 export default function FutIcon() {
   return (
     <svg
-      fill="#FACC15"
+      className="dark:fill-slate-400 fill-gray-800"
       width="64px"
       height="64px"
       viewBox="0 0 512 512"

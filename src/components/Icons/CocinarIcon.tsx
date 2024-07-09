@@ -1,7 +1,8 @@
 export default function CocinarIcon() {
   return (
     <svg
-      fill="#FACC15"
+      // fill="#898fa3"
+      className="dark:fill-gray-400 fill-gray-700"
       width="64px"
       height="64px"
       viewBox="0 0 50 50"

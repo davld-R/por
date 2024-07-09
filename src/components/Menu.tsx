@@ -9,32 +9,32 @@ function Menu() {
       </div>
       <nav className="">
         <ul className="flex gap-5">
-          <li className="">
-            <a className="" href="#">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
+            <a className="" href="/#experiencia">
               Experiencia
             </a>
           </li>
-          <li className="">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
             <a className="" href="#">
               Proyectos
             </a>
           </li>
-          <li className="">
-            <a className="" href="#">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
+            <a className="" href="/#skills">
               Skills
             </a>
           </li>
-          <li className="">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
             <a className="" href="#">
               Hobbies
             </a>
           </li>
-          <li className="">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
             <a className="" href="#">
               Formación académica
             </a>
           </li>
-          <li className="">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
             <a className="" href="#">
               Sobre mi
             </a>
