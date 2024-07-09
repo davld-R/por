@@ -19,6 +19,7 @@ import CocinarIcon from './components/Icons/CocinarIcon';
 import SobreMi from './components/SobreMi';
 import Footer from './components/Footer';
 import MaletinIco from './components/Icons/MaletinIco';
+import CodeIcon from './components/Icons/CodeIcon';
 
 const experiencia = [
   {
@@ -49,7 +50,7 @@ function App() {
     <>
       <Menu></Menu>
       <Banner></Banner>
-      <div className="flex pb-6 items-center gap-4" id="experiencia">
+      <div className="flex mb-6 items-center gap-4" id="experiencia">
         <MaletinIco width="32px" height="32px"></MaletinIco>
         <h1 className="text-3xl font-semibold">Experiencia profesional</h1>
       </div>
@@ -62,6 +63,10 @@ function App() {
           funcion={funcion}
         ></Experiencia>
       ))}
+      <div className="mt-36 mb-6 flex gap-4 items-center">
+        <CodeIcon width="32px" height="32px"></CodeIcon>
+        <p className="dark:text-slate-50 text-3xl font-semibold">Proyectos</p>
+      </div>
       <Proyectos></Proyectos>
       <h1
         id="skills"

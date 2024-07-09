@@ -1,10 +1,10 @@
-import CodeIcon from './Icons/CodeIcon';
+import CodeFICon from './Icons/CodeFIcon';
 
 function Menu() {
   return (
     <header className="flex justify-between mt-2 mb-28 items-center">
       <div className="flex gap-2 items-center">
-        <CodeIcon width="32px" height="32px" color="#FACC15"></CodeIcon>
+        <CodeFICon></CodeFICon>
         <p className="">Juan Rojas</p>
       </div>
       <nav className="">
