@@ -4,7 +4,9 @@ function Menu() {
   return (
     <header className="flex justify-between mt-2 mb-28 items-center">
       <div className="flex gap-2 items-center">
-        <CodeFICon></CodeFICon>
+        <div className="cursor-pointer">
+          <CodeFICon></CodeFICon>
+        </div>
         <p className="">Juan Rojas</p>
       </div>
       <nav className="">
@@ -15,7 +17,7 @@ function Menu() {
             </a>
           </li>
           <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
-            <a className="" href="#">
+            <a className="" href="/#proyectos">
               Proyectos
             </a>
           </li>
@@ -25,18 +27,18 @@ function Menu() {
             </a>
           </li>
           <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
-            <a className="" href="#">
+            <a className="" href="/#hobbies">
               Hobbies
             </a>
           </li>
           <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
-            <a className="" href="#">
-              Formación académica
+            <a className="" href="/#sobre-mi">
+              Sobre mi
             </a>
           </li>
           <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
-            <a className="" href="#">
-              Sobre mi
+            <a className="" href="mailto:juanrojas043@gmail.com">
+              Contacto
             </a>
           </li>
         </ul>

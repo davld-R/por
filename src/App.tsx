@@ -47,11 +47,6 @@ const experiencia = [
 ];
 
 function App() {
-  // const isDarkMode =
-  //   localStorage.theme === 'dark' ||
-  //   (!('theme' in localStorage) &&
-  //     window.matchMedia('(prefers-color-scheme: dark)').matches);
-
   return (
     <>
       {/* Componente de Menu */}
@@ -74,12 +69,12 @@ function App() {
           funcion={funcion}
         ></Experiencia>
       ))}
-      <div className="mt-36 mb-6 flex gap-4 items-center">
+
+      {/* Componente de proyectos */}
+      <div className="mt-36 mb-6 flex gap-4 items-center" id="proyectos">
         <CodeIcon width="32px" height="32px"></CodeIcon>
         <p className="dark:text-slate-50 text-3xl font-semibold">Proyectos</p>
       </div>
-
-      {/* Componente de proyectos */}
       <Proyectos
         nombre="Cifrado y descifrado"
         contenido="Este proyecto fue creado como parte del desafío ofrecido por Alura Latam y Oracle en el programa ONE. Protege la privacidad de tus comunicaciones o simplemente para divertirte intercambiando mensajes cifrados."
@@ -134,10 +129,13 @@ function App() {
         <Skills nombre="Tailwind CSS">
           <BootstrapIcon></BootstrapIcon>
         </Skills>
-
-        {/* Componente de Hobbies */}
       </section>
-      <h1 className="mt-36 mb-10 text-xl font-semibold text-center font-mono">
+
+      {/* Componente de Hobbies */}
+      <h1
+        className="mt-36 mb-10 text-xl font-semibold text-center font-mono"
+        id="hobbies"
+      >
         Hobbies
       </h1>
       <section className="flex flex-wrap justify-between mb-32">
@@ -160,7 +158,11 @@ function App() {
           <CocinarIcon></CocinarIcon>
         </Hobbies>
       </section>
+
+      {/* Componente de SobreMi */}
       <SobreMi></SobreMi>
+
+      {/* Componenete de Footer */}
       <Footer></Footer>
     </>
   );

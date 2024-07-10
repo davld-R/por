@@ -2,7 +2,7 @@ import UsuarioIco from './Icons/UsuarioIco';
 
 function SobreMi() {
   return (
-    <section>
+    <section id="sobre-mi">
       <div className="flex gap-6 pb-6 items-center">
         <UsuarioIco />
         <p className="text-3xl font-semibold">Sobre mi</p>
