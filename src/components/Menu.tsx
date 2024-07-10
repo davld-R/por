@@ -37,7 +37,7 @@ function Menu() {
             </a>
           </li>
           <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
-            <a className="" href="mailto:juanrojas043@gmail.com">
+            <a className="" href="juanrojas043@gmail.com">
               Contacto
             </a>
           </li>
