@@ -2,6 +2,9 @@ import Menu from './components/Menu';
 import Banner from './components/Banner';
 import Experiencia from './components/Experiencia';
 import Proyectos from './components/Proyectos';
+import Cifrado from './components/Proyectos/Cifrado';
+import Proyecto1Icon from './assets/p1.webp';
+import Proyecto2Icon from './assets/p2.webp';
 import Skills from './components/Skills';
 import Html5Icon from './components/Icons/Html5Icon';
 import Css5Icon from './components/Icons/Css5Icon';
@@ -48,12 +51,17 @@ function App() {
 
   return (
     <>
+      {/* Componente de Menu */}
       <Menu></Menu>
+
+      {/* Componente de Banner */}
       <Banner></Banner>
       <div className="flex mb-6 items-center gap-4" id="experiencia">
         <MaletinIco width="32px" height="32px"></MaletinIco>
         <h1 className="text-3xl font-semibold">Experiencia profesional</h1>
       </div>
+
+      {/* Componente de Experiencia */}
       {experiencia.map(({ key, nombre, empresa, fecha, funcion }) => (
         <Experiencia
           key={key}
@@ -67,7 +75,28 @@ function App() {
         <CodeIcon width="32px" height="32px"></CodeIcon>
         <p className="dark:text-slate-50 text-3xl font-semibold">Proyectos</p>
       </div>
-      <Proyectos></Proyectos>
+
+      {/* Componente de proyectos */}
+      <Proyectos
+        nombre="Cifrado y descifrado"
+        contenido="Este proyecto fue creado como parte del desafío ofrecido por Alura Latam y Oracle en el programa ONE. Protege la privacidad de tus comunicaciones o simplemente para divertirte intercambiando mensajes cifrados."
+        imagen={Proyecto1Icon}
+        code="https://github.com/davld-R/Challenge-Oracle-ONE-Encriptador"
+        link="https://davld-r.github.io/Challenge-Oracle-ONE-Encriptador/"
+      >
+        <Cifrado></Cifrado>
+      </Proyectos>
+      <Proyectos
+        nombre="Cifrado y descifrado"
+        contenido="Este proyecto fue creado como parte del desafío ofrecido por Alura Latam y Oracle en el programa ONE. Protege la privacidad de tus comunicaciones o simplemente para divertirte intercambiando mensajes cifrados."
+        imagen={Proyecto2Icon}
+        code="https://github.com/davld-R/Challenge-Oracle-ONE-Encriptador"
+        link="https://davld-r.github.io/Challenge-Oracle-ONE-Encriptador/"
+      >
+        <Cifrado></Cifrado>
+      </Proyectos>
+
+      {/* Componente de Skills */}
       <h1
         id="skills"
         className="mt-36 mb-10 text-xl font-semibold text-center font-mono"
@@ -82,7 +111,7 @@ function App() {
           <Css5Icon width="64px" height="64px"></Css5Icon>
         </Skills>
         <Skills nombre="JavaScript">
-          <JavaScriptIcon></JavaScriptIcon>
+          <JavaScriptIcon width="54px" height="54px"></JavaScriptIcon>
         </Skills>
         <Skills nombre="React">
           <ReactIcon></ReactIcon>
@@ -93,6 +122,8 @@ function App() {
         <Skills nombre="Tailwind CSS">
           <BootstrapIcon></BootstrapIcon>
         </Skills>
+
+        {/* Componente de Hobbies */}
       </section>
       <h1 className="mt-36 mb-10 text-xl font-semibold text-center font-mono">
         Hobbies

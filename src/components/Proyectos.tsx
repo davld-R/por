@@ -1,58 +1,48 @@
-import HtmlIco from './Icons/Html5Icon';
-import Proyecto1 from '../assets/p1.webp';
+import { ReactNode } from 'react';
+import LinkIcon from './Icons/LinkIcon';
+import GithubIcon from './Icons/GitHubIcon';
 
-function Proyectos() {
+interface props {
+  nombre: string;
+  contenido: string;
+  imagen: string;
+  code: string;
+  link: string;
+  children: ReactNode;
+}
+
+function Proyectos({ nombre, contenido, imagen, children, code, link }: props) {
   return (
-    <section className="flex justify-between gap-7">
-      <div className="">
+    <section className="flex justify-between gap-7 mb-10">
+      <div className="w-full h-64">
         <img
-          src={Proyecto1}
+          src={imagen}
           alt="Imagen proyecto"
-          className="object-cover object-top w-full transition hover:scale-95 hover:duration-300"
+          className="object-cover rounded-2xl object-top transition hover:scale-95 hover:duration-300 size-full"
         />
       </div>
-      <div>
-        <p className="text-2xl flex font-bold mb-2">
-          SVGL - A beautiful library with SVG logos
-        </p>
+      <div className=" w-full">
+        <p className="text-2xl flex font-bold mb-2">{nombre}</p>
         <div>
-          <ul className="flex gap-4">
-            <li className="flex border border-slate-50 rounded-2xl py-1 px-2 items-center gap-2">
-              <span>
-                <HtmlIco width="20px" height="20px" />
-              </span>
-              HTML5
-            </li>
-            <li className="flex border border-slate-50 rounded-2xl py-1 px-2 items-center gap-2">
-              <span>
-                <HtmlIco width="20px" height="20px" />
-              </span>
-              CSS
-            </li>
-          </ul>
-          <p className="my-2 dark:text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            tenetur fugiat expedita quas est vitae a reprehenderit fuga eius?
-            Autem, facilis odit? Odio dolore alias enim! Eaque dolorem aliquid
-            sunt.
-          </p>
+          {children}
+          <p className="my-2 dark:text-gray-400">{contenido}</p>
         </div>
         <div className="flex gap-4">
           <a
-            href=""
+            href={code}
             className="flex border border-slate-50 rounded-xl py-2 px-3 items-center gap-2"
           >
             <span>
-              <HtmlIco width="20px" height="20px" />
+              <GithubIcon width="20px" height="20px" />
             </span>
             Code
           </a>
           <a
-            href=""
+            href={link}
             className="flex border border-slate-50 rounded-xl py-2 px-3 items-center gap-2"
           >
             <span>
-              <HtmlIco width="20px" height="20px" />
+              <LinkIcon width="20px" height="20px" />
             </span>
             Preview
           </a>

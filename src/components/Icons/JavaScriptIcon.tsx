@@ -1,8 +1,13 @@
-export default function JavaScriptIcon() {
+interface props {
+  width: string;
+  height: string;
+}
+
+export default function JavaScriptIcon({ width, height }: props) {
   return (
     <svg
-      width="54px"
-      height="54px"
+      width={width}
+      height={height}
       className="rounded-md"
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
