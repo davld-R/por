@@ -8,7 +8,7 @@ function Footer() {
         <a href="#" className="mr-4 hover:underline">
           Sobre mí
         </a>
-        <a href="#" className="hover:underline">
+        <a href="mailto:juanrojas043@gmail.com" className="hover:underline">
           Contacto
         </a>
       </div>
