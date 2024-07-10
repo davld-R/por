@@ -3,8 +3,11 @@ import Banner from './components/Banner';
 import Experiencia from './components/Experiencia';
 import Proyectos from './components/Proyectos';
 import Cifrado from './components/Proyectos/Cifrado';
+import Equipos from './components/Proyectos/Equipos';
+import Validaciones from './components/Proyectos/Validaciones';
 import Proyecto1Icon from './assets/p1.webp';
 import Proyecto2Icon from './assets/p2.webp';
+import Proyecto3Icon from './assets/p3.webp';
 import Skills from './components/Skills';
 import Html5Icon from './components/Icons/Html5Icon';
 import Css5Icon from './components/Icons/Css5Icon';
@@ -87,13 +90,22 @@ function App() {
         <Cifrado></Cifrado>
       </Proyectos>
       <Proyectos
-        nombre="Cifrado y descifrado"
-        contenido="Este proyecto fue creado como parte del desafío ofrecido por Alura Latam y Oracle en el programa ONE. Protege la privacidad de tus comunicaciones o simplemente para divertirte intercambiando mensajes cifrados."
+        nombre="Equipos organizados"
+        contenido="Este proyecto ofrece una herramienta interactiva para crear equipos de trabajo de manera creativa. Además, podría proporcionar sugerencias para fomentar la colaboración y la innovación dentro de los equipos."
         imagen={Proyecto2Icon}
-        code="https://github.com/davld-R/Challenge-Oracle-ONE-Encriptador"
-        link="https://davld-r.github.io/Challenge-Oracle-ONE-Encriptador/"
+        code="https://github.com/davld-R/org"
+        link="https://org-or07x6gen-juanrojas043-gmailcom.vercel.app/"
       >
-        <Cifrado></Cifrado>
+        <Equipos></Equipos>
+      </Proyectos>
+      <Proyectos
+        nombre="Validaciones de formulario"
+        contenido="Este proyecto ofrece validaciones de una tienda de mascotas Además, ofrece de manera interactiva los formularios diligenciados con los datos solicitados"
+        imagen={Proyecto3Icon}
+        code="https://github.com/davld-R/html-validaciones"
+        link="https://davld-r.github.io/html-validaciones/"
+      >
+        <Validaciones></Validaciones>
       </Proyectos>
 
       {/* Componente de Skills */}
@@ -114,7 +126,7 @@ function App() {
           <JavaScriptIcon width="54px" height="54px"></JavaScriptIcon>
         </Skills>
         <Skills nombre="React">
-          <ReactIcon></ReactIcon>
+          <ReactIcon width="64px" height="64px"></ReactIcon>
         </Skills>
         <Skills nombre="Django">
           <DjangoIcon></DjangoIcon>

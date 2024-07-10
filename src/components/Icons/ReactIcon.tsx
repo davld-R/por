@@ -1,8 +1,13 @@
-export default function ReactIcon() {
+interface props {
+  width: string;
+  height: string;
+}
+
+export default function ReactIcon({ width, height }: props) {
   return (
     <svg
-      width="64px"
-      height="64px"
+      width={width}
+      height={height}
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

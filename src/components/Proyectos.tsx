@@ -18,7 +18,7 @@ function Proyectos({ nombre, contenido, imagen, children, code, link }: props) {
         <img
           src={imagen}
           alt="Imagen proyecto"
-          className="object-cover rounded-2xl object-top transition hover:scale-95 hover:duration-300 size-full"
+          className="object-cover rounded-2xl object-top transition hover:scale-95 hover:duration-300 size-full border-b-4 border-r-4 border-black"
         />
       </div>
       <div className=" w-full">
@@ -30,7 +30,7 @@ function Proyectos({ nombre, contenido, imagen, children, code, link }: props) {
         <div className="flex gap-4">
           <a
             href={code}
-            className="flex border border-slate-50 rounded-xl py-2 px-3 items-center gap-2"
+            className="flex border border-slate-50 rounded-xl py-2 px-3 items-center gap-2 dark:bg-gray-950 bg-gray-800 text-slate-50"
           >
             <span>
               <GithubIcon width="20px" height="20px" />
@@ -39,7 +39,7 @@ function Proyectos({ nombre, contenido, imagen, children, code, link }: props) {
           </a>
           <a
             href={link}
-            className="flex border border-slate-50 rounded-xl py-2 px-3 items-center gap-2"
+            className="flex border border-slate-50 rounded-xl py-2 px-3 items-center gap-2 dark:bg-gray-950 bg-gray-800 text-slate-50"
           >
             <span>
               <LinkIcon width="20px" height="20px" />
