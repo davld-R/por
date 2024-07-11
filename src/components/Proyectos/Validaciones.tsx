@@ -9,7 +9,7 @@ export default function Validaciones() {
         <span>
           <HtmlIco width="20px" height="20px" />
         </span>
-        React
+        HTML5
       </li>
       <li className="flex border border-slate-50 rounded-2xl py-1 px-2 items-center gap-2 bg-black text-slate-50">
         <span>
