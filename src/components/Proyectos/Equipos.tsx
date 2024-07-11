@@ -4,7 +4,7 @@ import NodeIcon from '../Icons/NodeIcon';
 
 export default function Equipos() {
   return (
-    <ul className="flex gap-4">
+    <ul className="flex gap-4 max-sm:flex-wrap">
       <li className="flex border border-slate-50 rounded-2xl py-1 px-2 items-center gap-2 bg-black text-slate-50">
         <span>
           <ReactIcon width="20px" height="20px" />

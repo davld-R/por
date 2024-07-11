@@ -11,27 +11,30 @@ function Menu() {
       </div>
       <nav className="">
         <ul className="flex gap-5">
-          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
+          <li
+            className="dark:hover:text-yellow-300 hover:text-yellow-500 
+          max-md:hidden "
+          >
             <a className="" href="/#experiencia">
               Experiencia
             </a>
           </li>
-          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500 max-md:hidden ">
             <a className="" href="/#proyectos">
               Proyectos
             </a>
           </li>
-          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500 max-md:hidden ">
             <a className="" href="/#skills">
               Skills
             </a>
           </li>
-          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500 max-md:hidden ">
             <a className="" href="/#hobbies">
               Hobbies
             </a>
           </li>
-          <li className="dark:hover:text-yellow-300 hover:text-yellow-500">
+          <li className="dark:hover:text-yellow-300 hover:text-yellow-500 max-md:hidden ">
             <a className="" href="/#sobre-mi">
               Sobre mi
             </a>

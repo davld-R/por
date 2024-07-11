@@ -7,7 +7,7 @@ function SobreMi() {
         <UsuarioIco />
         <p className="text-3xl font-semibold">Sobre mi</p>
       </div>
-      <div className="flex gap-11">
+      <div className="flex gap-11 max-md:flex-col-reverse max-md:items-center">
         <div className="font-mono dark:text-slate-50 text-gray-700">
           <p className="pb-4 ">
             ¡Hola! Mi nombre es Juan David Rojas, y me considero un apasionado
@@ -29,7 +29,7 @@ function SobreMi() {
             </span>
           </p>
         </div>
-        <div>
+        <div className="">
           <img
             src="https://github.com/davld-R.png"
             alt="Imagen Juan Rojas"
