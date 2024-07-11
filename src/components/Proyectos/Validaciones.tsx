@@ -21,7 +21,7 @@ export default function Validaciones() {
         <span>
           <JavaScriptIcon width="20px" height="20px" />
         </span>
-        Node JS
+        JavaScript
       </li>
     </ul>
   );
