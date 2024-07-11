@@ -1,4 +1,5 @@
 import UsuarioIco from './Icons/UsuarioIco';
+import JuanRojas from '../assets/p4.webp';
 
 function SobreMi() {
   return (
@@ -31,7 +32,7 @@ function SobreMi() {
         </div>
         <div className="">
           <img
-            src="https://github.com/davld-R.png"
+            src={JuanRojas}
             alt="Imagen Juan Rojas"
             className="max-w-56 rounded-2xl border-4 dark:border-white border-slate-300 origin-center rotate-3"
           />
